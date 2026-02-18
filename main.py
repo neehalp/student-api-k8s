@@ -1,3 +1,6 @@
+@app.get("/")
+def home():
+    return {"message": "CI/CD pipeline verified 🚀🔥"}
 from fastapi import FastAPI
 from sqlalchemy import create_engine, Column, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
@@ -22,7 +25,7 @@ app = FastAPI()
 
 @app.get("/")
 def home():
-    return {"message": "Student API with PostgreSQL 🚀"}
+    return {"message": "CI/CD pipeline verified 🚀🔥"}
 
 @app.post("/students")
 def add_student(name: str, marks: float, attendance: float):
